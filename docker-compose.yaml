@@ -17,7 +17,7 @@ services:
    drupalweb:
      depends_on:
        - mysql_drupaldb
-     container_name: drupal9_web
+     container_name: drupal_web
      build: 
        context: docker
      volumes:
