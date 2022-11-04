@@ -18,11 +18,13 @@ services:
      depends_on:
        - mysql_drupaldb
      container_name: drupal9_web
-     image: heydeb/drupal9_composer_drush_ubuntu_nginx_mysql:5
      build: 
        context: docker
      volumes:
       - $PWD/drupal_files:/var/www/html/waterfallhandbook
+     tty: true
+     stdin_open: true
+     restart: unless-stopped     
      ports:
        - "8998:80"
      networks:
