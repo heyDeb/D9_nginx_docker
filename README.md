@@ -5,7 +5,7 @@ This image is built up on Ubuntu 22.04 and top of it we have nginx web server wi
 
 Example docker-compose.yaml code can be downloaded here : https://github.com/heyDeb/D9_nginx_docker
 
-After cloning the project from github, run the below command. docker-compose up -d
+# After cloning the project from github, run the below command. docker-compose up -d
 
 then, run the following command to know the container name and in this case its drupal9_web
 : docker ps
@@ -18,7 +18,7 @@ And run the restart of php-fpm service
 
 service php8.1-fpm start
 
-And to install drush and drush launcher: composer require drush/drush
+# And to install drush and drush launcher: composer require drush/drush
 wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar && mv drush.phar /usr/local/bin/drush
 drush st
