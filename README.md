@@ -10,13 +10,11 @@ Example docker-compose.yaml code can be downloaded here : https://github.com/hey
 then, run the following command to know the container name and in this case its drupal9_web
 : docker ps
 
-docker exec -ti drupal9_web bash
+<strong>docker exec -ti drupal9_web bash</strong>
+
 if you are working from windows os git bash, then add a prefix winpty before docker exec command.
 cd /var/www/html/waterfallhandbook
-composer install
-And run the restart of php-fpm service
-
-service php8.1-fpm start
+<strong>composer install</strong>
 
 # And to install drush and drush launcher: composer require drush/drush
 wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
